@@ -5,17 +5,7 @@ import (
 	"testing"
 )
 
-func QueryLocalCache(ctx context.Context, param any, res any) error {
-	return nil
-}
 
-func QueryRedisCache(ctx context.Context, param any, res any) error {
-	return nil
-}
-
-func QueryMySQLDB(ctx context.Context, param any, res any) error {
-	return nil
-}
 
 func TestQuery(t *testing.T) {
 	query := NewQuery(QueryLocalCache, QueryRedisCache, QueryMySQLDB)
